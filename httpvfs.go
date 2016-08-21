@@ -1,5 +1,11 @@
 /*
 Package httpvfs implements functions to make a godoc vfs.Filesystem implement the http.FileSystem interface.
+
+NOTE: It's recommended you use the newer package
+https://godoc.org/bitbucket.org/mjl/httpasset instead (serves
+"index.html" properly, doesn't return server errors on directory
+listings).
+
 Together with bitbucket.org/mjl/asset this makes it easy to serve static files from a zip file embedded in a Go binary.
 
 See https://godoc.org/bitbucket.org/mjl/httpvfs for documentation.
